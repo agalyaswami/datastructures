@@ -12,6 +12,7 @@ class slinkedlist:
             self.head=newnode
             return
         last=self.head
+  #use to check it is null or not
         while(last.next):
             last=last.next
         last.next=newnode
