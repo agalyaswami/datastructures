@@ -1,0 +1,21 @@
+class stack:
+    def __init__(self):
+        self.stack=[]
+    def add(self,data):
+        if data not in self.stack:
+            self.stack.append(data)
+            
+        else:
+            print("it is in the stack")
+    def remove(self):
+        if len(self.stack)<=0:
+            return("no element in the stack")
+        else:
+            return self.stack.pop()
+Astack=stack()
+Astack.add("mon")
+Astack.add("tue")
+Astack.add("wed")
+Astack.add("thu")
+Astack.remove()
+Astack.remove()
